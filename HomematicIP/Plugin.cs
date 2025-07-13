@@ -12,7 +12,7 @@ namespace HomematicIP;
 public class Plugin
 {
     private ClientWebSocket? client;
-    private JsonSerializerOptions jsonOptions = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase, Converters = { new JsonStringEnumConverter() }, AllowOutOfOrderMetadataProperties = true };
+    private JsonSerializerOptions jsonOptions = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase, Converters = { new JsonStringEnumConverter() }, AllowOutOfOrderMetadataProperties = true, DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull };
     private Dictionary<Type, Delegate> handlers = new Dictionary<Type, Delegate>();
 
     public string Id { get; }
