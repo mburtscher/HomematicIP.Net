@@ -7,7 +7,7 @@ A class library for .NET to implement plugins for the HomematicIP Home Control U
 
 # How to
 
-Take a look at the example plugin in `HomematicFroniusPlugin`.
+Take a look at the example plugin in https://github.com/mburtscher/HomematicIP.Plugin.Fronius.
 
 # License
 
