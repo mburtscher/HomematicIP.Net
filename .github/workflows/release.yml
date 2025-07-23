@@ -20,7 +20,9 @@ jobs:
         dotnet-version: 9.0.x
     - name: Extract version
       run: echo "VERSION=${{ github.ref_name }}" | sed 's/^v//' >> $GITHUB_ENV
+    - name: Build
+      run: dotnet build -c Release -p:Version=${{ env.VERSION }} -p:AssemblyVersion=${{ env.VERSION }}
     - name: Pack
-      run: dotnet pack -c Release -p:Version=${{ env.VERSION }} --output .
+      run: dotnet pack -c Release -p:Version=${{ env.VERSION }} -p:AssemblyVersion=${{ env.VERSION }} --output .
     - name: Push to NuGet
       run: dotnet nuget push "HomematicIP.Net.*.*.*.nupkg" --api-key ${{secrets.nuget_api_key}} --source https://api.nuget.org/v3/index.json
