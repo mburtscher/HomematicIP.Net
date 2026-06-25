@@ -1,4 +1,5 @@
 ﻿using HomematicIP.Domain;
+using HomematicIP.Domain.Types;
 
 namespace HomematicIP.Api;
 

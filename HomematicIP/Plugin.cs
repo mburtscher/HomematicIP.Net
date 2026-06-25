@@ -1,5 +1,6 @@
 ﻿using HomematicIP.Api;
 using HomematicIP.Domain;
+using HomematicIP.Domain.Types;
 using System.Diagnostics;
 using System.Net.Security;
 using System.Net.WebSockets;

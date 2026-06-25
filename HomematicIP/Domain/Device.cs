@@ -1,4 +1,5 @@
 using HomematicIP.Domain.Features;
+using HomematicIP.Domain.Types;
 
 namespace HomematicIP.Domain;
 

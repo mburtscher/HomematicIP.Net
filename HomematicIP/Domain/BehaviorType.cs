@@ -1,3 +1,0 @@
-﻿namespace HomematicIP.Domain;
-
-public enum BehaviorType { ACKNOWLEDGEABLE_BY_OK, ACKNOWLEDGEABLE_BY_YES_NO, DISMISSIBLE, NOT_DISMISSIBLE };
